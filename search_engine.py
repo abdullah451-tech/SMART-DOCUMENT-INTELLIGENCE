@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # 1. Load all document chunks
 with open(
-    "outputs/all_documents_chunks.json",
+    "all_documents_chunks.json",
     "r",
     encoding="utf-8"
 ) as file:
@@ -16,7 +16,7 @@ with open(
 
 # 2. Load all document embeddings
 embeddings = np.load(
-    "outputs/all_documents_embeddings.npy"
+    "all_documents_embeddings.npy"
 )
 
 
